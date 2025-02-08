@@ -41,6 +41,8 @@
             txtTelefone = new MaskedTextBox();
             txtCodigo = new TextBox();
             label3 = new Label();
+            txtEmail = new TextBox();
+            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)dg).BeginInit();
             SuspendLayout();
             // 
@@ -151,7 +153,6 @@
             txtCodigo.Name = "txtCodigo";
             txtCodigo.Size = new Size(61, 23);
             txtCodigo.TabIndex = 30;
-            txtCodigo.TextChanged += txtCodigo_TextChanged;
             // 
             // label3
             // 
@@ -162,11 +163,29 @@
             label3.TabIndex = 31;
             label3.Text = "Código:";
             // 
+            // txtEmail
+            // 
+            txtEmail.Location = new Point(412, 71);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(131, 23);
+            txtEmail.TabIndex = 32;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(345, 71);
+            label4.Name = "label4";
+            label4.Size = new Size(44, 15);
+            label4.TabIndex = 33;
+            label4.Text = "E-mail:";
+            // 
             // frmClientes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(688, 450);
+            Controls.Add(txtEmail);
+            Controls.Add(label4);
             Controls.Add(txtCodigo);
             Controls.Add(label3);
             Controls.Add(txtTelefone);
@@ -203,5 +222,7 @@
         private MaskedTextBox txtTelefone;
         private TextBox txtCodigo;
         private Label label3;
+        private TextBox txtEmail;
+        private Label label4;
     }
 }

@@ -124,7 +124,7 @@
   <data name="cadastrosToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAGaRJREFUeF7tnXt0HFd9x5U4QHi/CqdQwJBYM6vV3pGDIYdCWx8IJbS0TUmrtECs
+        DAAACwwBP0AiyAAAGaRJREFUeF7tnXt0HFd9x5U4QHi/CqdQwJBYM6vV3pGDIYdCWx8IJbS0TUmrtECs
         GcmOHMuWdUduCC20Sik0ENrDCe8QCqF/lFbWzMqOH/Er8gvZ3hk5BkKgKQk05EBioCThEV7J9vxmJXv1
         m5W80u6s7p35fs75nMMJ9u7eO7/fzzP3NW1tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAWT/7ugWeJ0pDZFcg3iNLwnxWm3F4rlH8jQvdGEbgfsQL3lsjQvc0K
@@ -239,7 +239,7 @@
   <data name="orçamentosToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAJpdJREFUeF7tnQl0XNWZ5z3TM2emzySoXpkkk4SQTtPTaUhwzBoCCWD2AIFAoMMO
+        DAAACwwBP0AiyAAAJpdJREFUeF7tnQl0XNWZ5z3TM2emzySoXpkkk4SQTtPTaUhwzBoCCWD2AIFAoMMO
         oTtACDvELAHMGrawhbDYVbLlfcGW91W2vEmWLFm2vFvyvsiytVa9onN6eiZz5/xvlWz5flWu96pe1Xv3
         1ved8zvHsq2qe7/77v/d5bvfHTCAjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2N
         jY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2N
@@ -410,7 +410,7 @@
   <data name="sairToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAJe1JREFUeF7tnQl0HNWV9z1JJpOZLLNmzuxkvkkGXCULG9lWVVdJsrGxJVXJNgax
+        DAAACwwBP0AiyAAAJe1JREFUeF7tnQl0HNWV9z1JJpOZLLNmzuxkvkkGXCULG9lWVVdJsrGxJVXJNgax
         2gQSlrAvYd8MJGwhgbDvBDIQgllNWOIArpY3ybJlebfwvkjVm8FOMgnJJOF951arTfveaqlb6lbXq77/
         c34HjiV1v/fq/m/Ve/WWUaNYLBaLxWKxWCwWi8VisVgsFovFYrFYLBaLxWKxWCwWi8VisVgsFovFYrFY
         LBaLxWKxWCwWi8VisVgsFovFYrFYLBaLxWKxWCwWizV0JVobvtA7I3J4X4tpxK3IjJhtnuHaxuWuZd4e

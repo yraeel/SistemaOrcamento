@@ -21,12 +21,13 @@ namespace SistemaOrcamento.View
             Listar();
         }
 
-       
+
 
         private void HabilitarCampos()
         {
             txtNome.Enabled = true;
             txtTelefone.Enabled = true;
+            txtEmail.Enabled = true;
 
         }
 
@@ -34,7 +35,7 @@ namespace SistemaOrcamento.View
         {
             txtNome.Enabled = false;
             txtTelefone.Enabled = false;
-
+            txtEmail.Enabled = false;
         }
 
         private void Limpar()
@@ -42,16 +43,21 @@ namespace SistemaOrcamento.View
             txtNome.Text = "";
             txtTelefone.Text = "";
             txtCodigo.Text = "";
+            txtEmail.Text = "";
 
         }
 
-        
+
 
         private void Listar()
         {
             try
             {
                 dg.DataSource = model.Listar();
+                dg.Columns[0].HeaderText = "Id Cliente";
+                dg.Columns[1].HeaderText = "Nome";
+                dg.Columns[2].HeaderText = "Telefone";
+                dg.Columns[3].HeaderText = "E-mail";
             }
             catch (Exception ex)
             {
@@ -66,6 +72,7 @@ namespace SistemaOrcamento.View
             {
                 dado.Nome = txtNome.Text;
                 dado.Telefone = txtTelefone.Text;
+                dado.Email = txtEmail.Text;
 
                 model.Salvar(dado);
 
@@ -84,6 +91,7 @@ namespace SistemaOrcamento.View
                 dado.Id_cliente = Convert.ToInt32(txtCodigo.Text);
                 dado.Nome = txtNome.Text;
                 dado.Telefone = txtTelefone.Text;
+                dado.Email = txtEmail.Text;
                 model.Excluir(dado);
                 MessageBox.Show("Cliente excluido com Sucesso!");
             }
@@ -115,6 +123,7 @@ namespace SistemaOrcamento.View
                 dado.Id_cliente = Convert.ToInt32(txtCodigo.Text);
                 dado.Nome = txtNome.Text;
                 dado.Telefone = txtTelefone.Text;
+                dado.Email = txtEmail.Text;
 
                 model.Editar(dado);
                 MessageBox.Show("Cliente editado com sucesso!");
@@ -195,6 +204,7 @@ namespace SistemaOrcamento.View
             txtCodigo.Text = dg.CurrentRow.Cells[0].Value.ToString();
             txtNome.Text = dg.CurrentRow.Cells[1].Value.ToString();
             txtTelefone.Text = dg.CurrentRow.Cells[2].Value.ToString();
+            txtEmail.Text = dg.CurrentRow.Cells[3].Value.ToString();
             HabilitarCampos();
         }
 
@@ -216,10 +226,7 @@ namespace SistemaOrcamento.View
 
 
 
-        private void txtCodigo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
 

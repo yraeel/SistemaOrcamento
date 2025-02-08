@@ -14,6 +14,7 @@ namespace SistemaOrcamento.Entidades
         int id_cliente;
         int quantidade;
         decimal valor_total;
+        DateTime data;
 
         public int Id_orcamento { get => id_orcamento; set => id_orcamento = value; }
         public string Numero_orcamento { get => numero_orcamento; set => numero_orcamento = value; }
@@ -21,5 +22,6 @@ namespace SistemaOrcamento.Entidades
         public int Id_cliente { get => id_cliente; set => id_cliente = value; }
         public int Quantidade { get => quantidade; set => quantidade = value; }
         public decimal Valor_total { get => valor_total; set => valor_total = value; }
+        public DateTime Data { get => data; set => data = value; }
     }
 }

@@ -39,9 +39,10 @@ namespace SistemaOrcamento.Controller
             try
             {
                 con.AbrirConexao();
-                sql = new MySqlCommand("UPDATE clientes SET nome = @nome, telefone = @telefone WHERE id_cliente = @id", con.con);
+                sql = new MySqlCommand("UPDATE clientes SET nome = @nome, telefone = @telefone, e-mail = @email WHERE id_cliente = @id", con.con);
                 sql.Parameters.AddWithValue("@nome", dado.Nome);
                 sql.Parameters.AddWithValue("@telefone", dado.Telefone);
+                sql.Parameters.AddWithValue("@e-mail", dado.Email);
                 sql.Parameters.AddWithValue("@id", dado.Id_cliente);
                 sql.ExecuteNonQuery();
                 con.FecharConexao();
@@ -98,11 +99,12 @@ namespace SistemaOrcamento.Controller
             try
             {
                 con.AbrirConexao();
-                sql = new MySqlCommand("INSERT INTO clientes (nome, telefone) values (@nome, @telefone)", con.con);
+                sql = new MySqlCommand("INSERT INTO clientes (nome, telefone, e-mail) values (@nome, @telefone, @email)", con.con);
                 sql.Parameters.AddWithValue("@nome", dado.Nome);
                 sql.Parameters.AddWithValue("@telefone", dado.Telefone);
-               
-                
+                sql.Parameters.AddWithValue("@e-mail", dado.Email);
+
+
                 sql.ExecuteNonQuery();
                 con.FecharConexao();
             }

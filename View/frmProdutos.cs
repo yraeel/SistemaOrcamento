@@ -57,6 +57,13 @@ namespace SistemaOrcamento.View
             try
             {
                 dg.DataSource = model.Listar();
+                
+                dg.Columns[0].HeaderText = "Id Produto";
+                dg.Columns[1].HeaderText = "Codigo";
+                dg.Columns[2].HeaderText = "Nome";
+                dg.Columns[3].HeaderText = "Descrição";
+                dg.Columns[4].HeaderText = "Valor";
+                
             }
             catch (Exception ex)
             {
@@ -105,7 +112,7 @@ namespace SistemaOrcamento.View
             try
             {
                 dado.Nome = txtBuscar.Text;
-                dado.Codigo = txtCodigo.Text;
+                dado.Codigo = txtBuscar.Text;
                 dg.DataSource = model.Buscar(dado);
             }
             catch (Exception ex)
@@ -159,13 +166,14 @@ namespace SistemaOrcamento.View
 
 
 
-        private void dg_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dg_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            txtId.Text = dg.CurrentRow.Cells[0].Value.ToString();
             txtCodigo.Text = dg.CurrentRow.Cells[1].Value.ToString();
             txtNome.Text = dg.CurrentRow.Cells[2].Value.ToString();
             txtDescricao.Text = dg.CurrentRow.Cells[3].Value.ToString();
             txtValor.Text = dg.CurrentRow.Cells[4].Value.ToString();
-            txtId.Text = dg.CurrentRow.Cells[0].Value.ToString();
+
 
             HabilitarCampos();
         }
@@ -204,6 +212,18 @@ namespace SistemaOrcamento.View
             DesabilitarCampos();
         }
 
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            Produtos dado = new Produtos();
+            Buscar(dado);
+
+            if (txtBuscar.Text == "")
+            {
+                Listar();
+                return;
+            }
+        }
+
         private void txtCodigo_TextChanged(object sender, EventArgs e)
         {
 
@@ -213,5 +233,7 @@ namespace SistemaOrcamento.View
         {
 
         }
+
+        
     }
 }

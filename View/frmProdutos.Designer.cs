@@ -52,7 +52,6 @@ namespace SistemaOrcamento.View
             // label1
             // 
             label1.AutoSize = true;
-            label1.Enabled = false;
             label1.Location = new Point(49, 103);
             label1.Name = "label1";
             label1.Size = new Size(43, 15);
@@ -78,7 +77,6 @@ namespace SistemaOrcamento.View
             // label2
             // 
             label2.AutoSize = true;
-            label2.Enabled = false;
             label2.Location = new Point(49, 148);
             label2.Name = "label2";
             label2.Size = new Size(61, 15);
@@ -96,7 +94,6 @@ namespace SistemaOrcamento.View
             // label3
             // 
             label3.AutoSize = true;
-            label3.Enabled = false;
             label3.Location = new Point(377, 103);
             label3.Name = "label3";
             label3.Size = new Size(36, 15);
@@ -115,7 +112,6 @@ namespace SistemaOrcamento.View
             // label4
             // 
             label4.AutoSize = true;
-            label4.Enabled = false;
             label4.Location = new Point(377, 148);
             label4.Name = "label4";
             label4.Size = new Size(49, 15);
@@ -128,6 +124,7 @@ namespace SistemaOrcamento.View
             txtBuscar.Name = "txtBuscar";
             txtBuscar.Size = new Size(131, 23);
             txtBuscar.TabIndex = 9;
+            txtBuscar.TextChanged += txtBuscar_TextChanged;
             // 
             // label5
             // 
@@ -187,7 +184,8 @@ namespace SistemaOrcamento.View
             dg.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dg.Size = new Size(526, 205);
             dg.TabIndex = 14;
-            dg.CellContentClick += dg_CellContentClick;
+            dg.CellClick += dg_CellClick;
+            dg.CellContentClick += dg_CellClick;
             // 
             // txtId
             // 

@@ -14,11 +14,6 @@ namespace SistemaOrcamento
 
         }
 
-        private void orçamentosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void sairToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -29,9 +24,10 @@ namespace SistemaOrcamento
 
         }
 
-        private void orçamentosToolStripMenuItem_Click_1(object sender, EventArgs e)
+        private void orcamentosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmOrcamentos frm = new frmOrcamentos();
+            frm.ShowDialog();
         }
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -46,5 +42,7 @@ namespace SistemaOrcamento
             frmProdutos frm = new frmProdutos();
             frm.ShowDialog();
         }
+
+        
     }
 }
